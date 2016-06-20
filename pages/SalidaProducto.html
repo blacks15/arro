@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Salida Producto</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+	<form method="post" id="sp" name="sp">
+		<table class="table" border="0">
+			<tr class="info">
+				<td colspan="4"><center><strong>Salida Producto</strong></center></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="textfield">Código: </label>
+					<input type="text" id="codigo" name="codigo" readonly="true"><br>
+					<label for="textfield">Nombre: </label>
+					<input type="text" id="nombre" name="nombre"><br>
+					<div class="ui-widget" id="errornombre">
+						<div class="ui-corner-all">
+							<p>
+								<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UN NOMBRE.
+							</p>
+						</div>
+					</div>
+					<button type="button" id="btnSave" class="btn btn-primary">Guardar</button>
+					<button type="button" id="btnUpdate" class="btn btn-primary">Actualizar</button>
+					<button type="reset" id="reset" class="btn">
+						<i class="fa fa-fw fa-refresh icon-blue"></i>
+					</button>
+				</td>
+				<td>
+					<label for="textfield">Existencia: </label>
+					<input type="number" name="exist" id="exist" readonly="true" class="is"><br>
+					<label for="textifield">Unidad Medida:</label>
+					<input type="text" class="im" name="um" id="um" readonly="true"><br>
+					<label for="textfield">Salida: </label>
+					<input type="number" min="0" class="is" name="salida" id="salida"><br>
+					<div class="ui-widget" id="errorsalida">
+						<div class="ui-corner-all">
+							<p>
+								<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR LA CANTIDAD DE SALIDA.
+							</p>
+						</div>
+					</div>
+				</td>
+				<td>
+					<button type="button" id="btnNew" class="btn btn-primary">Ingresar Nuevo</button><br>
+					<button type="button" id="btnGo" class="btn btn-primary">Ver Productos</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<div id="carga">
+		<img src="../css/img/ajax-loader2.gif">
+	</div>
+	<div id="error" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>Error Al Dar Salida Al Producto.</strong></center>
+	</div>
+	<div id="mensajealta" title="Información Guardada">
+		<span class="fa fa-fw fa-check-circle icon-blue"></span>
+		<center><strong>Salida De Producto Guardado Con Éxito.</strong></center>
+	</div>
+	<div id="upd" title="Información Guardada">
+		<span class="fa fa-fw fa-check-circle icon-blue"></span>
+		<center><strong>Salida De Producto Actualizado Con Éxito.</strong></center>
+	</div>
+	<div id="insuf" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>Producto Insuficiente Para La Salida.</strong></center>
+	</div>
+	<div id="agotado" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>El Producto Ya Esta Agotado.</strong></center>
+	</div>
+	<div id="full" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>Debe Llenar Todos Los Campos.</strong></center>
+	</div>
+	<script src="../plugins/jquery.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<script src="../js/salidaProducto.js"></script>
+	<script src="../plugins/jqueryui/jquery-ui.min.js"></script>
+</body>
+</html>

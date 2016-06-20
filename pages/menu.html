@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú</title>
+
+  <link rel="shortcut icon" href="../ico/favicon.ico">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+  <nav class="nav navbar-static-top" role="navigation">
+      <div>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <i class="fa fa-fw fa-2x fa-bars icon-white"></i>
+        </button>
+      </div>
+            <ul class="navbar-right top-nav" id="nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+             Felipe M <b class="caret"></b>
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="#"><i class="fa fa-fw fa-user"></i> Perfil</a>
+            </li>
+            <li class="divider"></li>
+            <li>
+                <a href="#"><i class="fa fa-fw fa-power-off"></i> Cerrar Sesión</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <div class="collapse navbar-collapse navbar-collapse">
+        <ul class="nav navbar-nav" id="nav">
+          <li>
+            <a href="Empresa.html" class="brand" target="admin">
+            <i class="fa fa-fw fa-home"></i></a>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-money"></i>Movimientos<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="CrearRetiro.html" target="admin">Crear Retiro</a>
+                  </li>
+                  <li>
+                      <a href="#">Ver Retiro</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">Corte Parcial</a>
+                  </li>
+                  <li>
+                    <a href="#">Corte Caja</a>
+                  </li>
+                  <li>
+                    <a href="#">Ver Corte Caja</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-dollar"></i>Compras<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="#">Crear Compra</a>
+                  </li>
+                  <li>
+                      <a href="#">Buscar Compra</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-dollar"></i>Ventas<i class="fa fa-fw fa-caret-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="CrearVenta.html" target="admin">Crear Venta</a>
+              </li>
+              <li>
+                  <a href="#">Buscar Venta</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-book"></i>Libros<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="CrearLibro.html" target="admin">Crear Libros</a>
+                  </li>
+                  <li>
+                      <a href="BuscarLibro.html" target="admin">Buscar Libros</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-truck"></i>Inventario<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="CrearProducto.html" target="admin">Crear Producto</a>
+                  </li>
+                  <li>
+                      <a href="BuscarProducto.html" target="admin">Buscar Producto</a>
+                  </li>
+                  <li>
+                    <a href="SalidaProducto.html" target="admin">Salida Producto</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="CrearProveedor.html" target="admin">Crear Proveedor</a>
+                  </li>
+                  <li>
+                    <a href="BuscarProveedor.html" target="admin">Buscar Proveedor</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-group"></i>Empleados/Usuarios<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="CrearEmpleado.html" target="admin">Crear Empleado</a>
+                  </li>
+                  <li>
+                      <a href="BuscarEmpleado.html" target="admin">Buscar Empleado</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="CrearUsuario.html" target="admin">Crear Usuario</a>
+                  </li>
+                  <li>
+                    <a href="#">Buscar Usuario</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-group"></i>Clientes/Deudores<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="CrearCliente.html" target="admin">Crear Cliente</a>
+                  </li>
+                  <li>
+                      <a href="#">Buscar Cliente</a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                    <a href="#">Crear Deudor</a>
+                  </li>
+                  <li>
+                    <a href="#">Abono</a>
+                  </li>
+                  <li>
+                    <a href="#">Estado Cuenta</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-fw fa-file"></i>Reportes<i class="fa fa-fw fa-caret-down"></i></a>
+              <ul class="dropdown-menu">
+                  <li>
+                      <a href="#" target="admin">Clientes</a>
+                  </li>
+                  <li>
+                      <a href="#">Deudores</a>
+                  </li>
+                  <li>
+                    <a href="#">Ventas</a>
+                  </li>
+                  <li>
+                    <a href="#">Inventario</a>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  <table width="100%">
+    <tr>
+      <td>
+        <iframe src="Empresa.html" frameborder="0" name="admin"></iframe>
+      </td>
+    </tr>
+  </table>
+  <script src="../plugins/jquery.js"></script>
+  <script src="../js/bootstrap/bootstrap.js"></script>
+</body>
+</html>

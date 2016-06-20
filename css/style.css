@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	margin: 0px;
+	padding: 0px;
+	font-size: 16px;
+	font-family: sans-serif, arial, helvetica;
+	text-transform: capitalize;
+}
+body {
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+	font-size: 14px;
+	background-image: url(img/fondo5.jpg);
+	background-color: rgba(250,250,210,0.5);
+	background-repeat: repeat;
+}
+ /*td img {
+	max-height: 100%;
+	max-width: 100%;
+	height: 200px;
+	width: 300px;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+}*/
+
+figure img {
+	max-height: 100%;
+	max-width: 100%;
+	height: 200px;
+	width: 300px;
+	border: 5px red dotted;
+	box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8);
+	overflow: hidden;
+	border-radius: 20%;	
+	background-size: cover;
+}
+iframe {
+	width: 100%;
+	height: 580px;
+	padding-top: 0px;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+@media(max-width: 768px) {
+    body {
+    	font-size: 12px;
+        margin-top: 0px;
+    }
+	.navbar-nav {
+		width: 100%;
+		text-align: center;
+	}
+	.navbar-nav > li {
+		float: left;
+		display: block;
+    	position: absolute;
+		margin-top: 0;
+	}
+	.navbar-nav > li.navbar-right {
+		float: right !important;
+	}
+}
+
+input {
+	margin-bottom: 5px;
+	text-transform: capitalize;
+}
+label {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+nav {
+	width: 100%;
+	margin: 10px 0;
+	padding: 4px;
+}
+table {
+	margin-top: 0px;
+	font-weight: bold;
+	margin: 0 auto;
+	background-color: rgba(250,250,210,0.2);
+}
+thead {
+	text-align: center;
+	/*background:#009900;*/
+	background-color: rgba(0,153,0,0.8);
+	color: white;
+}
+table td input {
+	margin-bottom: 6px;
+}
+select {
+	width: 200px;
+	margin-bottom: 5px;
+}
+span {
+	float: left;
+	margin-left: 5px;
+	margin-right: .3em;
+}
+#rfc {
+	text-transform: uppercase;
+}
+#email,#password,#username {
+	text-transform: none;
+}
+#carga {
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	border: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+}
+.icon-blue {
+	color: blue;
+}
+.icon-red {
+	color: red;
+}
+.icon-white {
+	color: white;
+}
+
+.ixs {
+	width: 12.5%
+}
+.is {
+	width: 25%;
+}
+.im {
+	width: 37%;
+}
+.ilg {
+  width: 50%;
+}
+.search {
+	background: transparent url(img/icono-lupa.png);
+}
+.btn {
+	margin-top: 5px;
+	cursor: pointer;
+	text-align: center;
+	margin-bottom: .6em;
+}
+#ventana {
+	width: 300px; 
+	height: 350px; 
+	background: rgba(0,0,0,.3);
+	display:none;
+}
+.ventana {
+	display: none;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #808080;
+	line-height: 28px;
+	font-size: 15px;
+	text-align: justify;
+}
+	/*Formulario inicio*/
+.form-signin input[type="text"] {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.vertical-offset-100 {
+    padding-top: 100px;
+}
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	margin: auto;
+}
+.panel {
+	margin-bottom: 20px;
+	background-color: rgba(255, 255, 255, 0.75);
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+}
+/* main menu styles */
+#nav,#nav ul {
+	font-family: verdana;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav {
+	height: 100%;
+	left: 0;
+	top: 2px;
+}
+#nav li {
+	float: left;
+	position: relative;
+	display: inline;
+}
+#nav li a {
+	background: url(img/bg-menu.png) no-repeat center top;
+	color: #fff;
+	display: block;
+	float: left;
+	font-size: 14px;
+	height: 51px;
+	line-height: 40px;
+	padding: 0 10px;
+	position: relative;
+	text-decoration: none;
+}
+#nav li:first-child a {
+	padding-left: 15px;
+}
+#nav li ul li:first-child a {
+	background-image: none;
+	padding-left: 10px;
+}
+
+#nav ul {
+	background: #009900;
+	height: auto;
+	padding: 10px 0;
+	position: absolute;
+	top: 47px;
+	width: 180px;
+	
+	border-radius: 8px; /*some css3*/
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+#nav ul li {
+	width: 180px;
+}
+#nav ul li a {
+	background: transparent;
+	height: 20px;
+	line-height: 20px;
+	width: 160px;
+}
+#nav a:hover,#nav li:hover > a {
+	color: #99ff33;
+}

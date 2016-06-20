@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crear Empresa</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../plugins/fileinput/css/fileinput.min.css" media="all">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+	<form method="post" id="empresa" enctype="multipart/form-data">
+		<table class="table">
+			<tr>
+				<td>
+					<fieldset>
+						<legend>Logo</legend>
+						<input type="file" id="imagen" name="imagen" class="file-loading">
+					</fieldset>
+				</td>
+				<td>
+					<fieldset>
+						<legend>Contacto</legend>
+						<label for="textfield">Nombre Empresa: </label>
+						<input type="text" name="nombre" id="nombre" maxlength="30"><br>
+						<div class="ui-widget" id="errornombre">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UN NOMBRE
+								</p>
+							</div>
+						</div>
+						<label for="textfield">RFC: </label>
+						<input type="text" name="rfc" id="rfc" maxlength="15" class="im"><br>
+						<div class="ui-widget" id="errorrfc">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>RFC INCORRECTO
+								</p>
+							</div>
+						</div>
+						<div class="ui-widget" id="errorrfcn">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UN RFC
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Teléfono: </label>
+						<input type="text" name="tel" id="tel" maxlength="10" class="im"><br>
+						<div class="ui-widget" id="errortel">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UN TELÉFONO O CELULAR.
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Celular: </label>
+						<input type="text" name="cel" id="cel" maxlength="10" class="im"><br>
+						<div class="ui-widget" id="errorlim">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR 10 DIGITOS DEL CELULAR.
+								</p>
+							</div>
+						</div>
+						<label for="textfield">E-mail: </label>
+						<input type="email" name="email" id="email"><br>
+						<div class="ui-widget" id="erroremail" title="Advertencia">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>E-MAIL NO VALIDO
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Pagina Web: </label>
+						<input type="url" name="web" id="web"><br>
+					</fieldset>
+				</td>
+				<td>
+					<fieldset>
+						<legend>Dirección</legend>
+						<label for="textfield">Calle: </label>
+						<input type="text" name="calle" id="calle" maxlength="30"><br>
+						<div class="ui-widget" id="errorcalle">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UNA CALLE
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Número: </label>
+						<input type="text" name="num" id="num" maxlength="5" class="is"><br>
+						<div class="ui-widget" id="errornum">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UN NÚMERO
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Colonia: </label>
+						<input type="text" name="col" id="col" maxlength="30"><br>
+						<div class="ui-widget" id="errorcol">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UNA COLONIA
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Ciudad: </label>
+						<input type="text" name="city" id="city" maxlength="30" class="letras"><br>
+						<div class="ui-widget" id="errorcity">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UNA CIUDAD
+								</p>
+							</div>
+						</div>
+						<label for="textfield">Estado: </label>
+						<input type="text" name="edo" id="edo" maxlength="30" class="letras"><br>
+						<div class="ui-widget" id="erroredo">
+							<div class="ui-corner-all">
+								<p>
+									<i class="fa fa-fw fa-warning icon-red"></i>
+									<strong>ERROR: </strong>DEBE INGRESAR UN ESTADO
+								</p>
+							</div>
+						</div>
+						<button type="button" id="btnSave" class="btn btn-primary">Guardar</button>
+						<button type="button" id="btnUpdate" class="btn btn-primary">Actualizar</button>
+						<button type="button" class="btn" id="refresh">
+							<i class="fa fa-fw fa-refresh icon-blue"></i>
+						</button>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<div id="carga">
+		<img src="../css/img/ajax-loader2.gif">
+	</div>
+	<div id="error" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>Error Al Guardar Empresa.</strong></center>
+	</div>
+	<div id="mensajealta" title="Información Guardada">
+		<span class="fa fa-fw fa-check-circle icon-blue"></span>
+		<center><strong>Empresa Guardada Con Éxito.</strong></center>
+	</div>
+	<div id="upd" title="Información Guardada">
+		<span class="fa fa-fw fa-check-circle icon-blue"></span>
+		<center><strong>Empresa Actualizada Con Éxito.</strong></center>
+	</div>
+	<div id="existe" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>Ya Se Ha Dado Una Empresa De Alta.</strong></center>
+	</div>
+	<div id="full" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>Debe Llenar Todos Los Campos.</strong></center>
+	</div>
+	<script src="../plugins/jquery.js"></script>
+	<script src="../plugins/fileinput/js/fileinput.min.js"></script>
+	<script src="../js/bootstrap/bootstrap.js"></script>
+	<script src="../js/empresa.js"></script>
+	<script src="../plugins/jqueryui/jquery-ui.min.js"></script>
+	
+</body>
+</html>

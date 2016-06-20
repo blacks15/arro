@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Inicio</title>
+
+	<link rel="shortcut icon" href="ico/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form method="post" id="login">
+		<div class="container">
+			<div class="row vertical-offset-100">
+				<div class="col-md-4 col-md-offset-4">
+					<div class="panel panel-default">
+		                <div class="panel-heading">                                
+		                    <div class="row-fluid user-row">
+		                        <img src="css/img/o.jpg" class="img-responsive"/>
+		                    </div>
+		                </div>
+	                    <div class="panel-body">
+	                        <form accept-charset="UTF-8" role="form" class="form-signin">
+	                            <fieldset>
+	                                <label class="panel-login"></label>
+	                                <div class="input-group">
+	                                	<i class="fa fa-fw fa-user input-group-addon"></i>
+	                                	<input class="form-control caracEsp" placeholder="Usuario" id="username" name="username" type="text" maxlength="15">
+	                                </div><br>
+	                                <div class="ui-widget" id="errornombre">
+										<div class="ui-corner-all">
+											<p>
+												<i class="fa fa-fw fa-warning icon-red"></i>
+												<strong>ERROR: </strong>DEBE INGRESAR UN USUARIO.
+											</p>
+										</div>
+									</div>
+	                                <div class="input-group">
+	                                	<i class="fa fa-fw fa-key input-group-addon"></i>
+	                                	<input class="form-control caracEsp" placeholder="Contraseña" id="password" name="password" type="password" maxlength="15">
+	                                </div>
+	                                <div class="ui-widget" id="errorpass">
+										<div class="ui-corner-all">
+											<p>
+												<i class="fa fa-fw fa-warning icon-red"></i>
+												<strong>ERROR: </strong>DEBE INGRESAR UN CONTRASEÑA.
+											</p>
+										</div>
+									</div>
+	                                <br></br>
+	                                <input class="btn btn-lg btn-success btn-block" type="button" id="btnLogin" value="Iniciar Sesión »">
+	                            </fieldset>
+	                        </form>
+	                    </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+	<div id="error" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>Usuario O Contraseña Incorrecto.</strong></center>
+	</div>
+	<div id="full" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>Debe Llenar Todos Los Campos.</strong></center>
+	</div>
+	<div id="carEsp" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>No Se Permiten Caracteres Especiales.</strong></center>
+	</div>
+</body>
+	<script src="plugins/jquery.js"></script>
+	<script src="js/login.js"></script>
+	<script src="plugins/jqueryui/jquery-ui.min.js"></script>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Buscar Platillo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" media="screen" href="../plugins/jqgrid/css/ui.jqgrid.css" />
+	<link rel="stylesheet" href="../plugins/fileinput/css/fileinput.min.css" media="all">
+
+</head>
+<body>
+<table class="table" border="0">
+	<tr>
+		<td>
+			<button type="button" id="btnNew" class="btn btn-primary">Ingrear Nuevo</button>
+			<button type="button" id="btnReporte" class="btn btn-primary">Reporte PDF</button>
+		</td>
+	</tr>
+</table>
+<table id="platillos"></table>
+<div id="pager2"></div>
+<div id="ventana" align="center">
+	<img name="ip">
+</div>
+	<div id="war" title="Advertencia">
+        <span class="fa fa-fw fa-warning icon-red"></span>
+          <center><strong>Debe Seleccionar una Fila.</strong></center>
+    </div>
+	<script src="../plugins/jquery.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<script src="../plugins/jqueryui/jquery-ui.min.js"></script>
+    <script type="text/javascript"src="../plugins/jqgrid/js/jquery.jqGrid.min.js"></script>
+    <script type="text/javascript" src="../plugins/jqgrid/js/i18n/grid.locale-en.js"></script>
+	<script src="../js/buscar_platillo.js"></script>
+	<script src="../plugins/fileinput/js/fileinput.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Crear Platillo</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../plugins/fileinput/css/fileinput.min.css" media="all">
+	<link rel="stylesheet" href="../plugins/chosen/chosen.css">
+
+</head>
+<body>
+	<form method="post" id="platillo">
+		<table class="table">
+			<tr class="info">
+				<td colspan="4"><center><strong>Crear Platillo</strong></center></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" placeholder="Buscar" id="bus" name="bus">
+					<button type="button" class="btn" id="search">
+						<i class="fa fa-fw fa-search icon-blue"></i>
+					</button>
+					<div class="ui-widget" id="errorbuscar">
+		          		<div class="ui-corner-all">
+		            		<p>
+		            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UN NOMBRE.
+		            		</p>
+		            	</div>
+		         	</div>
+				</td>
+			</tr>
+			<tr>
+				<td width="40%">
+					<fieldset>
+						<legend>Datos Platillo</legend>
+						<label for="textfield">Código: </label>
+						<input type="text" readonly="true" id="id" name="id"><br>
+						<label for="textfield">Nombre: </label>
+						<input type="text" id="nombre" name="nombre"><br>
+						<div class="ui-widget" id="errornombre">
+		          			<div class="ui-corner-all">
+			            		<p>
+			            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UN NOMBRE.
+			            		</p>
+			            	</div>
+			         	</div>
+						<label for="textfield">Categoria: </label>
+						<select name="tipo" id="tipo" class="chosen">
+							<option value="0">SELECCIONE</option>
+							<option value="1">COMIDAS</option>
+							<option value="2">BEBIDAS</option>
+							<option value="3">POSTRES</option>
+						</select><br>
+						<div class="ui-widget" id="errorcategoria">
+		          			<div class="ui-corner-all">
+			            		<p>
+			            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE SELECCIONAR UNA CATEGORIA.
+			            		</p>
+			            	</div>
+			         	</div>
+						<label for="textfield">Precio: </label>
+						<input type="number" class="ixs" id="precio" name="precio" min="0"><br>
+						<div class="ui-widget" id="errorprecio">
+		          			<div class="ui-corner-all">
+			            		<p>
+			            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UN PRECIO.
+			            		</p>
+			            	</div>
+			         	</div>
+						<button type="button" class="btn btn-primary" id="btnSave">Guardar</button>
+						<button type="button" class="btn btn-primary" id="btnUpdate">Actualizar</button>
+						<button type="button" class="btn btn-primary" id="btnGo">Ver Platillos</button>
+						<button type="button" class="btn" id="reset">
+							<i class="fa fa-fw fa-refresh icon-blue"></i>
+						</button>
+					</fieldset>
+				</td>
+				<td align="center">
+					<fieldset>
+						<input type="file" id="imagen" name="imagen" class="file-loading">
+						<div class="ui-widget" id="errorimagen">
+		          			<div class="ui-corner-all">
+			            		<p>
+			            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UNA IMAGEN.
+			            		</p>
+			            	</div>
+			         	</div>
+					</fieldset>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+	<div id="carga">
+		<img src="../css/img/ajax-loader2.gif">
+	</div>
+	<div id="error" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>Error Al Guardar Platillo.</strong></center>
+	</div>
+	<div id="mensajealta" title="Información Guardada">
+		<span class="fa fa-fw fa-check-circle icon-blue"></span>
+		<center><strong>Platillo Guardado Con Éxito.</strong></center>
+	</div>
+	<div id="upd" title="Información Guardada">
+		<span class="fa fa-fw fa-check-circle icon-blue"></span>
+		<center><strong>Platillo Actualizado Con Éxito.</strong></center>
+	</div>
+	<div id="existe" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>El Platillo Ya Existe.</strong></center>
+	</div>
+	<div id="full" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>Debe Llenar Todos Los Campos.</strong></center>
+	</div>
+	<div id="letras" title="Advertencia">
+		<span class="fa fa-fw fa-info icon-red"></span>
+		<center><strong>Solo Se Permiten Letras.</strong></center>
+	</div>
+	<script src="../plugins/jquery.js"></script>
+	<script src="../js/platillo.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+	<script src="../plugins/fileinput/js/fileinput.min.js"></script>
+	<script type="text/javascript" src="../plugins/chosen/chosen.js"></script>
+	<script src="../plugins/jqueryui/jquery-ui.min.js"></script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Empresa</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="shortcut icon" href="../ico/favicon.ico">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../plugins/fileinput/css/fileinput.min.css" media="all">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+	<form method="post" id="empresas" name="empresa">
+		<table class="table" border="0">
+			<tr>
+				<td colspan="3">
+					<button type="button" id="btnDatos" class="btn btn-primary">Actualizar Datos</button>
+					<button type="button" id="btnVenta" class="btn btn-primary">Ventas</button>
+					<button type="button" id="btnDelete" class="btn btn-danger">Eliminar Empresa</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" class="info"><center>Datos Empresa</center></td>
+			</tr>
+			<tr>
+				<td>
+					<label for="textfield">Nombre Empresa: </label><br>
+					<label for="textfield">RFC: </label><br>
+					<label for="textfield">Domicilio: </label><br>
+					<label for="textfield">Ciudad: </label><br>
+					<label for="textfield">Estado: </label><br>
+					<label for="textfield">Teléfono: </label><br>
+					<label for="textfield">Celular: </label><br>
+					<label for="textfield">E-mail: </label><br>
+					<label for="textfield">Página Web: </label><br>
+				</td>
+				<td>
+					<input type="text" id="nombre" name="empresa" disabled="true"><br>
+					<input type="text" id="rfc" name="rfc" disabled="true" class="im"><br>
+					<input type="text" id="domicilio" name="domicilio" disabled="true"><br>
+					<input type="text" id="city" name="city" disabled="true"><br>
+					<input type="text" id="edo" name="edo" disabled="true"><br>
+					<input type="text" id="tel" name="tel" disabled="true" class="im"><br>
+					<input type="text" id="cel" name="cel" disabled="true" class="im"><br>
+					<input type="text" id="email" name="email" disabled="true"><br>
+					<input type="text" id="web" name="web" disabled="true">
+				</td>
+				<td width="50%" align="center">
+					<input type="file" id="imagen" name="imagen" class="file-loading">
+				</td>
+			</tr>
+		</table>
+	</form>
+	<div id="mensajealta" title="Advertencia">
+		<span class="fa fa-fw fa-warning icon-red"></span>
+		<center><strong>No Se Ha Registrado Ninguna Empresa.</strong></center>
+	</div>
+	<script src="../plugins/jquery.js"></script>
+	<script src="../js/bootstrap/bootstrap.js"></script>
+	<script src="../js/empresa.js"></script>
+	<script src="../plugins/jqueryui/jquery-ui.min.js"></script>
+	<script src="../plugins/fileinput/js/fileinput.min.js"></script>
+</body>
+</html>

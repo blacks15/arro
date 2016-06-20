@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Crear Retiro</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../font-awesome/css/font-awesome.css">
+	<link rel="stylesheet" href="../plugins/jqueryui/jquery-ui.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+	<form method="post" id="retiro" name="retiro">
+		<table class="table">
+			<tr class="info">
+				<td colspan="4"><center><strong>Crear Retiro</strong></center></td>
+			</tr>
+			<tr>
+				<td>
+					<input type="text" placeholder="Buscar" id="bus" name="bus">
+					<button type="button" class="btn" id="search">
+						<i class="fa fa-fw fa-search icon-blue"></i>
+					</button>
+					<div class="ui-widget" id="errorbuscar">
+		          		<div class="ui-corner-all">
+		            		<p>
+		            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UN NOMBRE.
+		            		</p>
+		            	</div>
+		         	</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="textfield">Código: </label>
+					<input type="text" readonly="true" name="id" id="id"><br>
+					<label for="textfield">Fecha: </label>
+					<input type="text" disabled id="date" name="date"><br>
+					<label for="textfield">Empleado: </label>
+					<input type="text" readonly="true" id="empleado" name="empleado"><br>
+					<label for="textfield">Retiro: </label>
+					<input type="number" class="is" min="0"><br>
+					<div class="ui-widget" id="errorretiro">
+		          		<div class="ui-corner-all">
+		            		<p>
+		            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UN RETIRO.
+		            		</p>
+		            	</div>
+		         	</div>
+					<label for="textfield">Descripción</label><br>
+					<textarea name="desc" id="desc" cols="30" rows="5"></textarea><br>
+					<div class="ui-widget" id="errordesc">
+		          		<div class="ui-corner-all">
+		            		<p>
+		            			<i class="fa fa-fw fa-warning icon-red"></i><strong>ERROR: </strong>DEBE INGRESAR UNA DESCRIPCIÓN.
+		            		</p>
+		            	</div>
+		         	</div>
+					<button type="button" id="bntSave" class="btn btn-primary">Guardar</button>
+					<button type="button" id="btnUpdate" class="btn btn-primary">Actualizar</button>
+					<button type="button" id="ver" class="btn btn-primary">Ver Retiros</button>
+					<button type="reset" id="refresh" class="btn">
+						<i class="fa fa-fw fa-refresh icon-blue"></i>
+					</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+	<div id="carga">
+		<img src="../css/img/ajax-loader2.gif">
+	</div>
+	<script src="../plugins/jquery.js"></script>
+	<script src="../js/retiro.js"></script>
+	<script src="../plugins/jqueryui/jquery-ui.min.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+</body>
+</html>
